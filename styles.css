@@ -19,12 +19,6 @@ body {
   line-height: 1.3;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  border-radius: 1rem;
-  object-fit: cover;
-}
 
 .container {
   width: min(1200px, 92vw);
@@ -53,28 +47,9 @@ h2 {
 }
 
 
-.top-image-strip {
-  padding: 1.5rem 0 0.5rem;
-}
-
-.top-image-strip__inner {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.top-image-strip__photo {
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 0.75rem;
-}
-
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
+  display: flex;
+  min-height: 70vh;
 }
 
 .hero__content {
@@ -95,11 +70,6 @@ h2 {
   font-weight: 700;
 }
 
-.hero__image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-}
 
 .btn {
   margin-top: 2rem;
@@ -115,7 +85,7 @@ h2 {
 .section-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 1.6fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
 }
 
@@ -124,9 +94,6 @@ h2 {
   font-size: clamp(1.05rem, 2.1vw, 1.5rem);
 }
 
-.card-image {
-  min-height: 340px;
-}
 
 .cards {
   display: grid;
@@ -139,11 +106,6 @@ h2 {
   text-align: center;
 }
 
-.card img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  margin-bottom: 1rem;
-}
 
 .card h3 {
   color: var(--accent);
@@ -168,28 +130,21 @@ h2 {
   color: #0d1224;
 }
 
-.wide-image {
-  width: 100%;
-  min-height: 320px;
-}
 
 .phone-showcase {
   display: grid;
-  grid-template-columns: 1fr 0.8fr 0.8fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
   align-items: center;
 }
 
-.phone-showcase img {
-  aspect-ratio: 9 / 16;
-}
 
 .geo-section {
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr;
 }
 
 .project-highlight {
-  grid-template-columns: 1fr 1.7fr;
+  grid-template-columns: 1fr;
 }
 
 .section--dark {
@@ -273,23 +228,6 @@ h2 {
 }
 
 @media (max-width: 980px) {
-  .top-image-strip__inner {
-    justify-content: center;
-  }
-
-  .top-image-strip__photo {
-    width: 150px;
-    height: 150px;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .hero__image {
-    min-height: 350px;
-  }
-
   .section-grid,
   .cards,
   .phone-showcase,
