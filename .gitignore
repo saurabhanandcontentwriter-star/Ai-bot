@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+assistant_data.json
+.pytest_cache/
